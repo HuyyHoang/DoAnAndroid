@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">Money manager</string>
+    <string name="moneymanager" translatable="false">Money Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Budget" translatable="false">Budget</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Login</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">Welcome!</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">Login failed</string>
+    <string name="SignupGG" translatable="false">Sign in with Google</string>
+    <string name="enter_your_name" translatable="false">Enter your name:</string>
+    <string name="dialog" translatable="false">Dialog</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string-array name="dataReport">
+        <item>Wallet</item>
+        <item>PayPal</item>
+    </string-array>
+
+    <string-array name="dataRange">
+        <item>6 tháng</item>
+        <item>30 ngày</item>
+        <item>7 ngày</item>
+    </string-array>
+
+    <string-array name="dataFormat">
+        <item>Word</item>
+        <item>Excel</item>
+    </string-array>
+
+    <string-array name="month_expense">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="month_income">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="bank_name">
+        <item>Wallet</item>
+        <item>Paypal</item>
+        <item>ACB</item>
+        <item>TPBank</item>
+        <item>DongA Bank</item>
+        <item>SeABank</item>
+        <item>ABBank</item>
+        <item>BacABank</item>
+        <item>MSB</item>
+        <item>Techcombank</item>
+        <item>BIDV</item>
+        <item>NamABank</item>
+        <item>VPBank</item>
+        <item>HDBank</item>
+        <item>OCB</item>
+        <item>MB</item>
+        <item>PVcombank</item>
+        <item>VIB</item>
+        <item>SCB</item>
+        <item>VCB</item>
+        <item>SHB</item>
+        <item>STB</item>
+        <item>LPB</item>
+        <item>EIB</item>
+    </string-array>
+
+    <string-array name="category_income">
+        <item>Salary</item>
+        <item>Gift &amp; Donation</item>
+        <item>Loan</item>
+        <item>Scholarship</item>
+        <item>Investment</item>
+        <item>Lottery</item>
+    </string-array>
+
+    <string-array name="category_expense">
+        <item>Housing</item>
+        <item>Food &amp; Drink</item>
+        <item>Education</item>
+        <item>Transportation</item>
+        <item>Utilities</item>
+        <item>Insurance</item>
+        <item>Medical &amp; Healthcare</item>
+        <item>Debt</item>
+        <item>Clothing</item>
+        <item>Personal</item>
+    </string-array>
+
+
+    <string-array name="language_option">
+        <item>English</item>
+        <item>VietNam</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    //fragment_setting
+    <string name="title_setting">Setting</string>
+    <string name="language_setting">Language</string>
+    <string name="notification_setting">Notification</string>
+    <string name="about_setting">About us</string>
+    <string name="help_setting">Help</string>
+
+    //fragment_change_information
+    <string name="title_change_information">Information</string>
+    <string name="btn_save_change_information">Save</string>
+    <string name="btn_reset_password_change_information">Reset Password</string>
+    <string name="textview_username_change_information">Username</string>
+    <string name="textview_nickname_change_information">Nickname</string>
+    <string name="textview_email_change_information">Email</string>
+
+    //activity_notification
+    <string name="textview_time_picker_notification">No notification set yet</string>
+    <string name="button_set_time_notification">Set Time Alarm</string>
+    <string name="button_cancel_alarm_notification">Cancel Alarm</string>
+
+    //activity report
+    <string name="title_activity_report">Financial Report</string>
+    <string name="tab_layout_expense">Expense</string>
+    <string name="tab_layout_income">Income</string>
+
+    //activity signup
+    <string name="Sign_up">Sign up</string>
+    <string name="DieuKhoan">Agree to the Terms of Service and Privacy Policy</string>
+    <string name="Button_SignUp">Sign Up</string>
+    <string name="textview_have_account">Already have an account?</string>
+    <string name="Button_Log_in2">Log in</string>
+
+    // forgot_password
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="textview_dont_worry_forgot_password">Dont worry.</string>
+    <string name="textview_dont_worry_2_forgot_password">
+Enter your username.</string>
+    <string name="button_continue_forgot_password">Continue</string>
+
+    // forgot_password_2
+    <string name="textview2">The Email Have Been Sent</string>
+    <string name="textview3">Please check your email and enter the OTP code</string>
+    <string name="textview4">Didnt receive the OTP ?</string>
+    <string name="text_resend_otp">RESEND OTP</string>
+    <string name="btn_verify">VERIFY</string>
+
+    // forgot_password_3
+    <string name="textview5">Reset Password</string>
+    <string name="btn_continue_forgot_password_3">Continue</string>
+
+    //fragment_account
+    <string name="title_account">Account</string>
+    <string name="textview6">Account Balance</string>
+    <string name="btn_add_account">Add new wallet</string>
+
+    //fragment_budget
+    <string name="button_create_budget">Create a budget</string>
+
+    //fragment_home
+    <string name="textview7">Account Balance</string>
+    <string name="textview_income_home">Income</string>
+    <string name="textview_expense_home">Expense</string>
+    <string name="textview8">Spend Frequency</string>
+    <string name="textview9">Recent Transaction</string>
+
+    //fragment_profile
+    <string name="textview10">UserName</string>
+    <string name="textview_account_profile">Account</string>
+    <string name="textview_account_setting">Setting</string>
+    <string name="textview_account_export_data">Export data</string>
+    <string name="textview_log_out_profile">Log out</string>
+
+    //fragment_transaction
+    <string name="textview11">See your financial report</string>
+
+    //activity_login
+    <string name="login" >Login</string>
+    <string name="forgot_password" >Forgot Password?</string>
+    <string name="btn_login">Login</string>
+    <string name="Orwith">Or with</string>
+    <string name="dont_have_an_acc_yet" >Don\'t have an account yet?</string>
+    <string name="btn_signup">Sign UP</string>
+    <string name="txt_input_username" >Username</string>
+    <string name="txt_input_password" >Password</string>
+
+
+</resources>

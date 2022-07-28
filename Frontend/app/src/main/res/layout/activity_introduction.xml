@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.activity_introduction"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_introduction"
+        android:layout_width="381dp"
+        android:layout_height="600dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circle_indicator_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/vie_bg_4side"
+        android:layout_gravity="center"
+        app:ci_drawable="@color/violet"/>
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-38dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/button_bg"
+        android:text="Skip"/>
+
+
+</LinearLayout>

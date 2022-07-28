@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".budget.fragment_detail_budget"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/violet">
+        <ImageButton
+            android:id="@+id/btn_back_detail_budget"
+            android:layout_marginLeft="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_west_24"
+            app:tint ="@color/white"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="42dp"
+            android:text="Detail budget"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_normal"
+            android:textSize="30dp" />
+        <ImageButton
+            android:id="@+id/remove_budget"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/trash5"
+            app:tint ="@color/white"
+            android:backgroundTint="@color/violet"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edit_text_bg">
+        <ImageView
+            android:id="@+id/budget_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/detail_budget_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Shopping"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining"
+            android:textSize="30dp" />
+        <TextView
+            android:id="@+id/detail_budget_remain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="$0"
+            android:textSize="70dp"
+            android:fontFamily="@font/inter" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/detail_budget_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/warning_budget"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

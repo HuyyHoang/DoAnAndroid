@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Story.story1"
+    android:orientation="vertical"
+    android:background="@color/red">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="This month"
+        android:textColor="@color/gray"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="You spent 💸"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <ListView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/vie_bg_4side" >
+    <TextView
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:text="And your biggest spending is from"
+        android:layout_marginTop="-10dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_normal" />
+        <LinearLayout
+            android:layout_width="156dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shop" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Shopping"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <ListView
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_normal" />
+    </LinearLayout>
+
+</LinearLayout>

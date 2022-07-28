@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Income.fragment_create_income"
+    android:orientation="vertical"
+    android:background="@color/green">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back_income"
+            android:layout_marginLeft="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_west_24"
+            android:layout_gravity="center"
+            app:tint="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="Income"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_normal"
+            android:textSize="@dimen/font_max" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much?"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/white"
+                android:textSize="70dp"
+                android:fontFamily="@font/inter" />
+            <EditText
+                android:id="@+id/et_income_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textSize="70dp"
+                android:fontFamily="@font/inter"
+                android:background="@drawable/edit_text_no_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vie_bg"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Spinner
+                android:id="@+id/Category_Income"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow_down"
+                app:tint="@color/violet" />
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/Description_Income"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_bg"
+            android:layout_margin="10dp"
+            android:hint="   Description"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/Wallet_Income"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                app:tint ="@color/violet"
+                android:src="@drawable/arrow_down" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/Add_attachment_income"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/stable" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add attachment"
+                android:textSize="25dp"
+                android:fontFamily="@font/inter_normal"/>
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/Repeat_Transaction_Income"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:text="Repeat Transaction"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_normal"/>
+
+        <Button
+            android:id="@+id/btn_continue_Income"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="Continue"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp.SignUp"
+    android:orientation="vertical"
+    android:background="@drawable/background7">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="40dp"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/btn_back_signup"
+        android:layout_marginLeft="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_west_24"
+        android:layout_gravity="center"
+        app:tint="@color/white"/>
+
+    <TextView
+        android:id="@+id/title_Signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center"
+        android:paddingRight="70dp"
+        android:text="@string/Sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_max" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="145dp"
+        android:background="@drawable/vie_bg"
+        android:orientation="vertical" >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_normal"
+            app:startIconDrawable="@drawable/person"
+            app:endIconMode="none"
+            android:hint="Username"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:counterMaxLength="255"
+            android:inputType="textEmailAddress"
+            app:errorEnabled="true"
+
+            android:selectAllOnFocus="true" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:maxLength="21"
+                android:digits="0123456789qwertzuiopasdfghjklyxcvbnm"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_normal"
+            app:startIconDrawable="@drawable/email"
+            app:endIconMode="none"
+            android:hint="Email"
+            app:helperTextTextColor="@color/red"
+            app:counterEnabled="true"
+            app:errorEnabled="true"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true" >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_normal"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:hint="Password"
+            app:helperTextTextColor="@color/red"
+            app:errorEnabled="true"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            android:selectAllOnFocus="true" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="30" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_notify_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/red"
+            android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/DieuKhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="@font/inter_normal"
+            android:text="@string/DieuKhoan"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_SignUp"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Button_SignUp"
+        android:fontFamily="@font/inter_normal"
+        android:textSize="16dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/dont_have_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_normal"
+            android:gravity="right|center_vertical"
+            android:text="@string/textview_have_account"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_signup_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:fontFamily="@font/inter_normal"
+            android:gravity="left|center_vertical"
+            android:text="Log in"
+            android:textColor="@color/violet" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

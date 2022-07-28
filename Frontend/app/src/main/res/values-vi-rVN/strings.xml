@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money manager</string>
+
+    //fragment_setting
+    <string name="title_setting">Cài đặt</string>
+    <string name="language_setting">Ngôn ngữ</string>
+    <string name="notification_setting">Thông báo</string>
+    <string name="about_setting">Về chúng tôi</string>
+    <string name="help_setting">Giúp đỡ</string>
+
+    //fragment_change_information
+    <string name="title_change_information">Thông tin</string>
+    <string name="btn_save_change_information">Lưu</string>
+    <string name="btn_reset_password_change_information">Đặt lại mật khẩu</string>
+    <string name="textview_username_change_information">Tên đăng nhập</string>
+    <string name="textview_nickname_change_information">Biệt danh</string>
+    <string name="textview_email_change_information">Email</string>
+
+    //activity_notification
+    <string name="textview_time_picker_notification">Chưa có thông báo được cài</string>
+    <string name="button_set_time_notification">Chọn giờ thông báo</string>
+    <string name="button_cancel_alarm_notification">Tắt thông báo</string>
+
+    //activity report
+    <string name="title_activity_report">Báo cáo thu chi</string>
+    <string name="tab_layout_expense">Chi tiêu</string>
+    <string name="tab_layout_income">Thu nhập</string>
+
+    //activity signup
+    <string name="Sign_up">Đăng kí</string>
+    <string name="DieuKhoan">Đồng ý với Điều khoản dịch vụ và Chính sách</string>
+    <string name="Button_SignUp">Đăng kí</string>
+    <string name="textview_have_account">Bạn đã có tài khoản?</string>
+    <string name="Button_Log_in2">Đăng nhập</string>
+
+    // forgot_password
+    <string name="title_forgot_password">Quên mật khẩu</string>
+    <string name="textview_dont_worry_forgot_password">Đừng lo lắng.</string>
+    <string name="textview_dont_worry_2_forgot_password">
+Hãy điền tên đăng nhập của bạn.</string>
+    <string name="button_continue_forgot_password">Tiếp tục</string>
+
+    // forgot_password_2
+    <string name="textview2">Email đã được gửi đi</string>
+    <string name="textview3">Hãy kiểm tra lại mail để lấy mã OTP</string>
+    <string name="textview4">Chưa nhận được mã OTP?</string>
+    <string name="text_resend_otp">Gửi OTP lại</string>
+    <string name="btn_verify">Xác Minh</string>
+
+    // forgot_password_3
+    <string name="textview5">Cài lại mật khẩu</string>
+    <string name="btn_continue_forgot_password_3">Tiếp tục</string>
+
+    //fragment_account
+    <string name="title_account">Tài khoản</string>
+    <string name="textview6">Số dư tài khoản</string>
+    <string name="btn_add_account">Thêm tài khoản mới</string>
+
+    //fragment_budget
+    <string name="button_create_budget">Tạo 1 ví dự chi</string>
+
+    //fragment_home
+    <string name="textview7">Số dư tài khoản</string>
+    <string name="textview_income_home">Thu nhập</string>
+    <string name="textview_expense_home">Chi tiêu</string>
+    <string name="textview8">Tần suất chi tiêu</string>
+    <string name="textview9">Giao dịch gần đây</string>
+
+    //fragment_profile
+    <string name="textview10">Tên người dùng</string>
+    <string name="textview_account_profile">Tài khoản</string>
+    <string name="textview_account_setting">Cài đặt</string>
+    <string name="textview_account_export_data">Xuất dữ liệu</string>
+    <string name="textview_log_out_profile">Đăng xuất</string>
+
+    //fragment_transaction
+    <string name="textview11">Xem báo cáo tài chính của bạn</string>
+
+    //activity_login
+    <string name="login" >Đăng nhập</string>
+    <string name="forgot_password" >Quên mật khẩu?</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="Orwith">Hoặc với</string>
+    <string name="dont_have_an_acc_yet" >Bạn chưa có tài khoản?</string>
+    <string name="btn_signup">Đăng kí</string>
+    <string name="txt_input_username" >Tên đăng nhập</string>
+    <string name="txt_input_password" >Mật khẩu</string>
+
+
+</resources>

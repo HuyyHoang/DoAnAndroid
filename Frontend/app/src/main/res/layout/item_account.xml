@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/item_account"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/account_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/dark_25"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_normal"/>
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/dark_25"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_normal"/>
+
+        <ImageView
+            android:id="@+id/image_active_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/success"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+</LinearLayout>

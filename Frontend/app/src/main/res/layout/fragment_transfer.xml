@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".transfer.fragment_create_transfer"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btn_back_transfer"
+            android:layout_marginLeft="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_west_24"
+            android:layout_gravity="center"
+            app:tint="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="Transfer"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_normal"
+            android:textSize="@dimen/font_max" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How much?"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/white"
+                android:textSize="70dp"
+                android:fontFamily="@font/inter" />
+            <EditText
+                android:id="@+id/et_transfer_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="70dp"
+                android:fontFamily="@font/inter"
+                android:background="@drawable/edit_text_no_bg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vie_bg"
+        android:orientation="vertical">
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            
+
+            <Spinner
+                android:id="@+id/Wallet_Transfer1"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/transfer" />
+
+            <Spinner
+                android:id="@+id/Wallet_Transfer2"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Description_Transfer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="  Description"
+            android:text=""
+            android:background="@drawable/edit_text_bg" />
+            android:text=""/>
+            android:background="@drawable/edit_text_bg"
+            android:hint="  Description" />
+
+        <LinearLayout
+            android:id="@+id/Add_attachment_income"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/stable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_normal"
+                android:text="Add attachment"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_notify_create_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/font_inter"
+            android:textColor="@color/red" />
+
+        <Button
+            android:id="@+id/btn_continue_create_transfer"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/font_inter_bold"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

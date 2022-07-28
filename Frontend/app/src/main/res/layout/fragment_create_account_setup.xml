@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Let’s setup your account!"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/font_inter_bold"
+        android:layout_gravity="center|top"/>
+
+    <TextView
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_normal"
+        android:text="Account can be your bank or your wallet."
+        android:textSize="20dp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/webarebear" />
+
+    <Button
+        android:id="@+id/btn_letgo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/inter"
+        android:text="Let's go"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

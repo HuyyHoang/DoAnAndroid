@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_transaction"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/today_report_1"
+        android:layout_width="360dp"
+        android:layout_height="89dp"
+        android:background="@drawable/botron"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/today_report_icon_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/today_report_icon_1">
+
+                <RelativeLayout
+                    android:id="@+id/today_report_detail_1"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/today_report_name_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="top"
+                        android:textColor="@color/dark"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/detail_today_report_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/today_report_name_1"
+                        android:layout_marginTop="13dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_normal"
+                        android:maxLines="1"
+                        android:textColor="@color/dark"
+                        android:textSize="13dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/today_report_time_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/today_report_detail_1">
+
+                    <TextView
+                        android:id="@+id/today_report_money_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="6.5dp"
+                        android:fontFamily="@font/inter"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tv_hour_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/today_report_money_1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/inter_normal"
+                        android:textColor="@color/light_20"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

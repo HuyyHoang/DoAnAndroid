@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.fragment_contact_us"
+    android:orientation="vertical"
+    android:background="@drawable/background17">
+    <ImageButton
+        android:id="@+id/btn_back_contact_us"
+        android:layout_marginLeft="40dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_west_24"
+        app:tint="@color/white"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daugau3con"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/vie_bg_4side">
+        <TextView
+            android:id="@+id/textview_contact_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Contact us for help"
+            android:fontFamily="@font/inter"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textview_hoang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="19521543@gm.uit.edu.vn"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/red"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/textview_hung2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="19521585@gm.uit.edu.vn"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/violet"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/textview_hai2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="19521862@gm.uit.edu.vn"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/green"
+            android:textSize="25sp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

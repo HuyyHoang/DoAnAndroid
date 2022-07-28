@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.fragment_Profile"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_marginLeft="34dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ava10"/>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_normal"
+                android:text="UserName"
+                android:textSize="15dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textview_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_normal"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:text="Iriana Saliha"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_change_information"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/edit"
+            android:background="?selectableItemBackgroundBorderless" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btn_account"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/account" />
+
+            <TextView
+                android:id="@+id/textview_account_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/inter_normal"
+                android:text="Account"
+                android:textColor="@color/dark_25"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/edit_text_bg">
+
+            <ImageView
+
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/setting" />
+            <TextView
+                android:id="@+id/textview_account_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="10dp"
+                android:text="Setting"
+                android:fontFamily="@font/inter_normal"
+                android:textSize="18dp"
+                android:textColor="@color/dark_25"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_export"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:background="@drawable/edit_text_bg">
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/export_data"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:id="@+id/textview_account_export_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="10dp"
+                android:text="Export data"
+                android:fontFamily="@font/inter_normal"
+                android:textSize="18dp"
+                android:textColor="@color/dark_25"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="89dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/logout" />
+
+            <TextView
+                android:id="@+id/textview_log_out_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/inter_normal"
+                android:text="Log out"
+                android:textColor="@color/dark_25"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

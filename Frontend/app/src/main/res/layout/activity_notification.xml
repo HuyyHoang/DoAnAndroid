@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.activity_notification"
+    android:orientation="vertical"
+    android:background="@drawable/background15">
+
+    <ImageButton
+        android:id="@+id/btn_back_notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-150dp"
+        android:layout_marginTop="40dp"
+        android:background="?selectableItemBackgroundBorderless"
+        app:tint ="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_baseline_west_24" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="170dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/vie_bg_4side">
+    <TextView
+        android:id="@+id/textview_time_picker_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textview_time_picker_notification"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_set_time_notification"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="@string/button_set_time_notification" />
+
+    <Button
+        android:id="@+id/button_cancel_alarm_notification"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="@string/button_cancel_alarm_notification" />
+    </LinearLayout>
+
+</LinearLayout>

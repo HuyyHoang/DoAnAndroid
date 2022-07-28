@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile.fragment_change_information">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/background_information2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_change_information"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_west_24"
+                app:tint ="@color/white"/>
+
+            <TextView
+                android:id="@+id/title_change_information"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center"
+                android:text="@string/title_change_information"
+                android:textColor="@color/white"
+                android:textSize="35dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/textview_username_change_information"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/textview_username_change_information"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter_normal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/editlayout_username_change_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_normal"
+            android:clickable="false"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="false"
+            app:endIconMode="none"
+            app:startIconDrawable="@drawable/person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_username_change_information"
+                android:hint="@string/textview_username_change_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:maxLength="30" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textview_email_change_information"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/textview_email_change_information"
+        android:textSize="20dp"
+        android:fontFamily="@font/inter_normal"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/editlayout_email_change_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/inter_normal"
+            app:startIconDrawable="@drawable/email"
+            android:clickable="false"
+            app:helperTextTextColor="@color/red"
+            android:selectAllOnFocus="false" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_email_change_information"
+                android:hint="@string/textview_email_change_information"
+                android:clickable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="30" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_reset_change_information"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/btn_reset_password_change_information"
+            android:layout_marginTop="30dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/inter"/>
+
+    </LinearLayout>
+</LinearLayout>

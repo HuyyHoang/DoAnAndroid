@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".budget.fragment_Budget"
+    android:background="@color/violet">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn_previous_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/violet"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_backward_no_tail" />
+
+        <TextView
+            android:id="@+id/textview_month_budget"
+            android:layout_width="69dp"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            android:text="November"
+            android:layout_gravity="center"
+            android:fontFamily="@font/inter_normal">
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_next_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/violet"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_forward_no_tail" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="580dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_create_budget"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:text="@string/button_create_budget" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

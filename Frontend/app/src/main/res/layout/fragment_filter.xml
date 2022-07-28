@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".transaction.fragment_filter"
+    android:background="@drawable/bottom_sheet_background"
+    android:id="@+id/bottom_sheet_container">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Filter Transaction"
+                android:textSize="16dp"
+                android:fontFamily="@font/inter_normal"
+                android:textColor="@color/dark"/>
+            <View
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:id="@+id/btn_reset_filter"
+                android:layout_width="71dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Reset"
+                android:textSize="10dp"
+                android:fontFamily="@font/inter_normal"
+                android:background="@drawable/button_bg"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_normal"
+                android:text="Filter By"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_income"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center"
+                    android:text="Income"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_expense"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center"
+                    android:text="Expense"
+                    android:textSize="18sp" />
+            </com.google.android.material.chip.ChipGroup>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_normal"
+                android:text="Sort By"
+                android:textStyle="bold"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_lowest"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center_vertical"
+                    android:text="Lowest"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_highest"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center_vertical"
+                    android:text="Highest"
+                    android:layout_marginLeft="9.3dp"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_oldest"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Oldest"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_normal"
+                    android:layout_marginLeft="9.3dp"
+                    />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_newest"
+                    style="@style/CustomChipStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center_vertical"
+                    android:text="Newest"
+                    android:textSize="18sp" />
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Category"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_normal"
+            android:textSize="16sp"
+            android:textColor="@color/dark"/>
+
+        <LinearLayout
+            android:id="@+id/choose_category"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_normal"
+                android:text="Choose Category"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/arrowright" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/selected_amount"
+                android:fontFamily="@font/inter_normal"
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/arrow"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="Apply"
+            android:fontFamily="@font/inter_normal"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>
